@@ -17,6 +17,7 @@ public class Imc {
         String nome,classi;
         int idade;
         String resp;
+        int contador = 0;
         
         System.out.println("Deseja Calcular seu Imc? Responda S pra sim");
         resp = sc.next();
@@ -59,10 +60,13 @@ public class Imc {
         System.out.println("Peso = "+peso+" Altura = "+altura);
         System.out.println("Seu IMC é = "+imc);
         System.out.println("sua Classificação foi = "+classi);
-        
+        contador++;
+                
         System.out.println("Deseja continuar ? responda s para sim");
         resp = sc.next();
         
+        
     }    
+        System.out.println("Quantidade de pessoas que ultilizaram = "+contador);
      }
 }
